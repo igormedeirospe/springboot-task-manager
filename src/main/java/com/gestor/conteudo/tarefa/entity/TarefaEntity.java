@@ -10,4 +10,27 @@ public class TarefaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String descricao;
+
+    private int postadoToday;
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public int getPostadoToday() {
+        return postadoToday;
+    }
+
+    public void setPostadoToday(int postadoToday) {
+        this.postadoToday = postadoToday;
+    }
+
+
+
+
 }
